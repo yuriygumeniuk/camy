@@ -252,12 +252,12 @@
 	overflow: hidden;
 	position: relative;
 }
-.left img {
+.left .slider-side-img {
 	position: absolute;
 	top: 0;
 	right: 0;
 }
-.right img {
+.right .slider-side-img {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -280,19 +280,8 @@
 }
 .forward {
 	left: 69px;
-	/*transform: translateY(-50%) scale(1, -1) ;*/
+	transform: scale(-1) translateY(50%);
 }
-.arrow-slider img {
-	display: inline;
-/*	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	opacity: 0.9;
-	background-color: red;
-*/}
-
-
 /*---------- slider-text ----------*/
 .slider-text {
 	position: absolute;
@@ -320,11 +309,11 @@
 .slider__link {
 	color: #98b827;
 	font-family: "MuseoSans-500", sans-serif;
-	font-size: 16px;
+	font-size: 18px;
 	font-weight: 400;
 }
-
 .visit {
 	height: 200px;
 	width: 600px;
+	position: absolute;
 }
