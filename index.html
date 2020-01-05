@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/swiper.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -16,7 +17,7 @@
 <header class="header">	
 
 
-<section class="header-login wrapper">
+<section class="header-login wrap">
 		<div class="language-block">
 			<div class="block-item"> 
 				<div id="language-label" class="item__label">Language:</div>
@@ -48,7 +49,7 @@
 </section> <!-- .header-login ------------>
 
 <section class="header-logo">
-	<div class="wrapper">
+	<div class="wrap">
 		<div class="header-logo-block">
 			<a href="#!" class="header-logo__link">
 				<div class="header-logo-item">
@@ -89,8 +90,8 @@
 </section> <!-- .header-search ----------->
 
 <section class="header-navigation-row">
-	<div class="header-navigation wrapper">
-		<div class="hr wrapper"></div>
+	<div class="header-navigation wrap">
+		<div class="hr wrap"></div>
 		<nav class="navigation-block">
 			<ul class="navigation-list">
 				<li class="navigation__item"><a href="#!" class="navigation__link active">HOME</a></li>
@@ -121,24 +122,64 @@
 <main class="main">
 
 
-<section class="banner-slider">
+<section class="banner-slider wrapper">
 	<div class="slider-side left">
 		<img class="slider-side-img" src="img/slider-side.png" alt="">
 		<a href="#!" class="arrow-slider backward">
 			<img src="img/arrow.png" alt="">
 		</a>			
 	</div>
-	<div class="slider-main">
-		<img src="img/slider-main.png" alt="">
-		<div class="slider-text">
-			<div class="slider__title">PHOTOGRAPHY SET</div>
-			<div class="slider__desc">
-				<p>Lorem ipsum dolor sit amet, consecte adipiscing elit. 
-				Fusce at justo eget lorem port titor tincidunt.</p>
+
+	<!-- slider -->
+	<div class="swiper-container">
+		<div class="swiper-wrapper wrap">
+			<!-- 1 -->
+			<div class="swiper-slide">
+				<div class="slider-main item-block">
+					<img src="img/slider-main.png" alt="">
+					<div class="slider-text">
+						<div class="slider__title">1 PHOTOGRAPHY SET</div>
+						<div class="slider__desc">
+							<p>Lorem ipsum dolor sit amet, consecte adipiscing elit. 
+							Fusce at justo eget lorem port titor tincidunt.</p>
+						</div>
+						<a href="#!" class="slider__link">Check the Product</a>
+					</div>
+				</div>		
 			</div>
-			<a href="#!" class="slider__link">Check the Product</a>
-		</div>
-	</div>
+			<!-- 2 -->
+			<div class="swiper-slide">
+				<div class="slider-main item-block">
+					<img src="img/slider-main.png" alt="">
+					<div class="slider-text">
+						<div class="slider__title">2 PHOTOGRAPHY SET</div>
+						<div class="slider__desc">
+							<p>Lorem ipsum dolor sit amet, consecte adipiscing elit. 
+							Fusce at justo eget lorem port titor tincidunt.</p>
+						</div>
+						<a href="#!" class="slider__link">Check the Product</a>
+					</div>
+				</div>		
+			</div>
+			<!-- 3 -->
+			<div class="swiper-slide">
+				<div class="slider-main item-block">
+					<img src="img/slider-main.png" alt="">
+					<div class="slider-text">
+						<div class="slider__title">3 PHOTOGRAPHY SET</div>
+						<div class="slider__desc">
+							<p>Lorem ipsum dolor sit amet, consecte adipiscing elit. 
+							Fusce at justo eget lorem port titor tincidunt.</p>
+						</div>
+						<a href="#!" class="slider__link">Check the Product</a>
+					</div>
+				</div>		
+			</div>
+			<!--  -->
+		</div>	<!-- swiper-wrapper -->
+	</div>	<!-- swiper-container -->
+	<!-- slide end -->
+
 	<div class="slider-side right">
 		<img class="slider-side-img" src="img/slider-side.png" alt="">
 		<a href="#!" class="arrow-slider forward">
@@ -147,14 +188,14 @@
 	</div>	
 </section> <!-- .banner-slider ----------->	
 
-<section class="visit wrapper">
+<section class="visit wrap">
 	<div class="visit-text">
 		CHECK OUR <span>AMAZING OFFERS</span>, VISIT OUR <span>STORE</span> NOW
 	</div>
 	<a href="#!" class="visit-btn btn--green">VISIT THE STORE</a>
 </section> <!-- .visit -------------------->
 
-<section class="recent wrapper">
+<section class="recent wrap">
 	<div class="block-title">
 		<div class="title__text">RECENT PRODUCTS</div>
 		<div class="hr"></div>
@@ -239,7 +280,7 @@
 	</div>
 </section> <!-- .recent ------------------->
 
-<section class="featured wrapper">
+<section class="featured wrap">
 	<div class="block-title">
 		<div class="title__text">FEATURED PRODUCTS</div>
 		<div class="hr"></div>
@@ -324,7 +365,7 @@
 	</div>			
 </section> <!-- .featured ----------------->
 
-<section class="brands wrapper">
+<section class="brands wrap">
 	<div class="block-title">
 		<div class="title__text">CHECK OUR BRANDS</div>
 		<div class="hr"></div>
@@ -342,7 +383,7 @@
 <footer class="footer">
 
 
-<section class="footer-control wrapper">
+<section class="footer-control wrap">
 	<div class="logo-social">
 		<a href="#!" class="header-logo__link scale">
 				<div class="header-logo-item">
@@ -454,7 +495,7 @@
 </section> <!-- .footer-control ---------->
 
 <section class="footer-nav-row">
-	<div class="footer-nav wrapper">
+	<div class="footer-nav wrap">
 		<ul class="footer-menu">
 			<li class="footer-menu__item"><a href="#!" class="footer-menu__link">HOME</a></li>
 			<li class="footer-menu__item"><a href="#!" class="footer-menu__link">PORTFOLIO</a></li>
@@ -467,6 +508,8 @@
 
 
 </footer>
-
+<script src="js/jquery-3.4.1.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/custom.js"></script>
 </body>
 </html>

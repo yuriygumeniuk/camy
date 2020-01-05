@@ -1,3 +1,12 @@
+.wrapper {
+	width: 100%;
+	margin: 0 auto;
+}
+.wrap {
+	width: 1180px;
+	margin: 0 auto;	
+}
+
 .btn--green {
 	display: flex;
 	align-items: center;
@@ -7,10 +16,6 @@
 	background-image: linear-gradient(45deg, #98b827 0%, #a3c330 50%, #98b827 100%);
 	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
 	color: #ffffff;
-}
-.wrapper {
-	width: 1180px;
-	margin: 0 auto;
 }
 /*========== HEADER ================*/
 .header {
@@ -236,23 +241,22 @@
 /*---------- section slider ----------*/
 .banner-slider {
 	height: 420px;
-	width: 1600px;
 	display: flex;
-	margin: 0 auto;
 }
 .slider-main {
 	display: inline-block;
 	height: 100%;
-	border-left: 1px solid #f6f6f6;
-	border-right: 1px solid #f6f6f6;
 	position: relative;
+	z-index: 1;
 }
 .slider-side {
+	border-right: 1px solid #f6f6f6;
 	height: 100%;
 	display: inline-block;
 	width: 300px;
 	overflow: hidden;
 	position: relative;
+	z-index: 2;
 }
 .left .slider-side-img {
 	position: absolute;
@@ -260,6 +264,7 @@
 	right: 0;
 }
 .right .slider-side-img {
+	border-left: 1px solid #f6f6f6;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -275,6 +280,7 @@
 	border-radius: 50%;
 	border: 3px solid rgba(255, 255, 255, 0.2);
 	background-color: rgba(30, 30, 32, 0.7);
+	padding-right: 5px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
