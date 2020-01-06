@@ -212,7 +212,8 @@
 	font-weight: 400;
 	text-transform: uppercase;
 }
-.navigation__item a:hover, a.active {
+.navigation__item.active a,
+.navigation__item a:hover {
 	color: #9ab920;	
 } 
 .cart-btn {
