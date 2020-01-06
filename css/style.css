@@ -7,6 +7,22 @@
 	margin: 0 auto;	
 }
 
+/*Кнопка вверх*/
+#go-top {
+  position: fixed; 
+  bottom: 360px; 
+  right: calc((100vw - 1180px) / 2 - 80px - 50px); 
+  cursor:pointer; 
+  display:none;
+  width: 50px;
+  height: 50px;
+  padding-left: 15px;
+  padding-top: 5px;
+}
+#go-top img {
+	display: block;
+	transform: rotate(90deg);
+}
 .btn--green {
 	display: flex;
 	align-items: center;
