@@ -707,6 +707,7 @@
 	text-transform: uppercase;
 	letter-spacing: -0.11px;
 }
+.footer-menu__item.active a,
 .footer-menu__link:hover {
 	color: #98b827;
 }

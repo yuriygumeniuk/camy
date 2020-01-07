@@ -6,6 +6,11 @@ $(document).ready(function () {
     return false
   });
 
+  $('.footer-menu__item a').click(function(){
+    $(this).parents('.footer-menu').find('.footer-menu__item').removeClass('active');
+    $(this).parent().addClass('active');
+    return false
+  });
 // scroll to top
     // $('body').append('<a href="#" id="go-top" title="Вверх"></a>')
     $(function() {
