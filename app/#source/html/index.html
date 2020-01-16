@@ -14,9 +14,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
 </head>
 <body>
+<a id="go-top" class="btn--green" title="Вверх">
+	<img src="img/arrow.png" alt="">
+</a>	
 <div class="wrapper">
-<div class="label"></div>		
-
 <!-- include('header.html') -->
 @@include('header.html')
 
@@ -68,7 +69,7 @@
 			<a href="#!" class="visit-btn btn--green">VISIT THE STORE</a>
 		</section> <!-- .visit -------------------->
 
-		<section class="recent container">
+		<section class="recent">
 			<div class="block-title">
 				<div class="title__text">RECENT PRODUCTS</div>
 				<div class="hr"></div>
@@ -165,7 +166,7 @@
 			</div> <!-- slider end -->
 		</section> <!-- .recent ------------------->
 
-		<section class="featured container">
+		<section class="featured">
 			<div class="block-title">
 				<div class="title__text">FEATURED PRODUCTS</div>
 				<div class="hr"></div>
@@ -262,7 +263,7 @@
 			</div>		<!-- slider end -->
 		</section> <!-- .featured ----------------->
 
-		<section class="brands container">
+		<section class="brands">
 			<div class="block-title">
 				<div class="title__text">CHECK OUR BRANDS</div>
 				<div class="hr"></div>
@@ -279,134 +280,138 @@
 </main>
 
 <footer class="footer">
-
-<section class="footer-control container">
-	<div class="logo-social">
-		<a href="#!" class="header-logo__link scale">
-				<div class="header-logo-item">
-					<img src="img/logo-camera.png" alt="">
-					<div class="logo-text">
-						<div class="logo-text__desc">EVERYTHING FOR YOUR STUDIO</div>
-						<div class="logo-text__title">
-							<span>Camera</span><span class="color-green">Store</span>
+	<section class="footer-control container">
+		<div class="logo-social footer-item">
+			<a href="#!" class="header-logo__link scale">
+					<div class="header-logo-item">
+						<img src="img/logo-camera.png" alt="">
+						<div class="logo-text">
+							<div class="logo-text__desc">EVERYTHING FOR YOUR STUDIO</div>
+							<div class="logo-text__title">
+								<span>Camera</span><span class="color-green">Store</span>
+							</div>
 						</div>
 					</div>
-				</div>
-		</a>
-		<div class="footer-social">
-			<div class="footer-block__title">Follow us</div>
-			<ul class="search-social-list">
-				<li class="search-social__item">
-					<a href="#!" class="search-social__link social-btn"><img src="img/locial-ico-01.png" alt=""></a>
-				</li>
-				<li class="search-social__item">
-					<a href="#!" class="search-social__link social-btn"><img src="img/locial-ico-02.png" alt=""></a>
-				</li>
-				<li class="search-social__item">
-					<a href="#!" class="search-social__link social-btn"><img src="img/locial-ico-03.png" alt=""></a>
-				</li>
-				<li class="search-social__item">
-					<a href="#!" class="search-social__link social-btn"><img src="img/locial-ico-04.png" alt=""></a>
-				</li>
-				<li class="search-social__item">
-					<a href="#!" class="search-social__link social-btn"><img src="img/locial-ico-05.png" alt=""></a>
-				</li>
-			</ul>
+			</a>
+			<div class="footer-social">
+				<div class="footer-block__title">Follow us</div>
+				<ul class="search-social-list">
+					<li class="search-social__item">
+						<a href="#!" class="search-social__link social-btn"><img src="img/locial-ico-01.png" alt=""></a>
+					</li>
+					<li class="search-social__item">
+						<a href="#!" class="search-social__link social-btn"><img src="img/locial-ico-02.png" alt=""></a>
+					</li>
+					<li class="search-social__item">
+						<a href="#!" class="search-social__link social-btn"><img src="img/locial-ico-03.png" alt=""></a>
+					</li>
+					<li class="search-social__item">
+						<a href="#!" class="search-social__link social-btn"><img src="img/locial-ico-04.png" alt=""></a>
+					</li>
+					<li class="search-social__item">
+						<a href="#!" class="search-social__link social-btn"><img src="img/locial-ico-05.png" alt=""></a>
+					</li>
+				</ul>
+			</div>
 		</div>
-	</div>
-	<div class="footer-recent">
-		<div class="footer-block__title">Recent Posts</div>
-		<!-- 1 -->
-		<a href="#!" class="recent-item">
-			<img src="img/recent-01.png" alt="" class="recent__img">
-			<div class="recent-text">
-				<div class="recent__title">New Camera Set</div>
-				<div class="recent__desc">posted by<span>&nbsp;Admin</span></div>
-			</div>	
-		</a>
-		<!-- 2 -->
-		<a href="#!" class="recent-item">
-			<img src="img/recent-02.png" alt="" class="recent__img">
-			<div class="recent-text">
-				<div class="recent__title">Special Camera Lenses</div>
-				<div class="recent__desc">posted by<span>&nbsp;Gljivec</span></div>
-			</div>	
-		</a>
-	</div>
-	<div class="footer-contacts">
-		<div class="footer-block__title">Contacts</div>
-		<div class="footer-contacts-text">
-			<div class="footer__adres">
-				<p>
-					1000 Ljubljana<br>
-					Celovska cesta 135<br>
-					Country Slovenia
-				</p>
-			</div>
-			<div class="footer-phone__block">
-				<p>
-					Phone: (+386) 40 123 456<br>
-					Mobile: (+386) 40 654 123
-				</p>
-			</div>
-			<div class="footer__email">
-				<p>
-					info@premiumcoding.com
-				</p>
-			</div>
-		</div>	
-	</div>
-	<div class="footer-people-say">
-		<div class="footer-block__title">What People say</div>
-		<!-- 1 -->
-		<div class="say-block">
-			<div class="say-block-img">
-				<img src="img/say-01.png" alt="" class="say__img">
-				<div class="say__name">ANNA</div>
-			</div>
-			<a href="#!" class="say-text">
-				<div class="say__desc">
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dolor orci...
-					</p>
-				</div>
-				<img src="img/quote-ico.png" alt="" class="say__quotes-ico">
+		
+		<div class="footer-recent footer-item">
+			<div class="footer-block__title">Recent Posts</div>
+			<!-- 1 -->
+			<a href="#!" class="recent-item">
+				<img src="img/recent-01.png" alt="" class="recent__img">
+				<div class="recent-text">
+					<div class="recent__title">New Camera Set</div>
+					<div class="recent__desc">posted by<span>&nbsp;Admin</span></div>
+				</div>	
+			</a>
+			<!-- 2 -->
+			<a href="#!" class="recent-item">
+				<img src="img/recent-02.png" alt="" class="recent__img">
+				<div class="recent-text">
+					<div class="recent__title">Special Camera Lenses</div>
+					<div class="recent__desc">posted by<span>&nbsp;Gljivec</span></div>
+				</div>	
 			</a>
 		</div>
-		<!-- 2 -->
-		<div class="say-block">
-			<div class="say-block-img">
-				<img src="img/say-02.png" alt="" class="say__img">
-				<div class="say__name">ERICA</div>
-			</div>
-			<a href="#!" class="say-text">
-				<div class="say__desc">
+		
+		<div class="footer-contacts footer-item">
+			<div class="footer-block__title">Contacts</div>
+			<div class="footer-contacts-text">
+				<div class="footer__adres">
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dolor orci...
+						1000 Ljubljana<br>
+						Celovska cesta 135<br>
+						Country Slovenia
 					</p>
 				</div>
-				<img src="img/quote-ico.png" alt="" class="say__quotes-ico">
-			</a>
+				<div class="footer-phone__block">
+					<p>
+						Phone: (+386) 40 123 456<br>
+						Mobile: (+386) 40 654 123
+					</p>
+				</div>
+				<div class="footer__email">
+					<p>
+						info@premiumcoding.com
+					</p>
+				</div>
+			</div>	
 		</div>
-	</div>
-</section> <!-- .footer-control ---------->
-
-<section class="footer-nav-row">
-	<div class="footer-nav container">
-		<ul class="footer-menu">
-			<li class="footer-menu__item active"><a href="#!" class="footer-menu__link">HOME</a></li>
-			<li class="footer-menu__item"><a href="#!" class="footer-menu__link">PORTFOLIO</a></li>
-			<li class="footer-menu__item"><a href="#!" class="footer-menu__link">SITEMAP</a></li>
-			<li class="footer-menu__item"><a href="#!" class="footer-menu__link">CONTACT</a></li>
-		</ul>			
-		<div class="footer-copyright">CameraStore @2013 by PremiumCoding | All Rights Reserved</div>
-	</div>
-</section> <!-- .footer-nav -------------->
+		
+		<div class="footer-people-say footer-item">
+			<!-- <div class="footer-block__title">What People say</div> -->
+			<!-- 1 -->
+			<div class="say-block">
+				<div class="say-block-img">
+					<img src="img/say-01.png" alt="" class="say__img">
+					<div class="say__name">ANNA</div>
+				</div>
+				<a href="#!" class="say-text">
+					<div class="say__desc">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dolor orci...
+						</p>
+					</div>
+					<img src="img/quote-ico.png" alt="" class="say__quotes-ico">
+				</a>
+			</div>
+			
+			<!-- 2 -->
+			<div class="say-block">
+				<div class="say-block-img">
+					<img src="img/say-02.png" alt="" class="say__img">
+					<div class="say__name">ERICA</div>
+				</div>
+				<a href="#!" class="say-text">
+					<div class="say__desc">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dolor orci...
+						</p>
+					</div>
+					<img src="img/quote-ico.png" alt="" class="say__quotes-ico">
+				</a>
+			</div>
+		</div>
+	</section> <!-- .footer-control ---------->
+	
+	<section class="footer-nav-row">
+		<div class="footer-nav container">
+			<ul class="footer-menu">
+				<li class="footer-menu__item active"><a href="#!" class="footer-menu__link">HOME</a></li>
+				<li class="footer-menu__item"><a href="#!" class="footer-menu__link">PORTFOLIO</a></li>
+				<li class="footer-menu__item"><a href="#!" class="footer-menu__link">SITEMAP</a></li>
+				<li class="footer-menu__item"><a href="#!" class="footer-menu__link">CONTACT</a></li>
+			</ul>			
+			<div class="footer-copyright">CameraStore @2013 by PremiumCoding | All Rights Reserved</div>
+		</div>
+	</section> <!-- .footer-nav -------------->
 
 </footer>
+</div>
+
 <script src="js/jquery-3.4.1.js"></script>
 <script src="js/swiper.min.js"></script>
 <script src="js/custom.js"></script>
-</div>
 </body>
 </html>

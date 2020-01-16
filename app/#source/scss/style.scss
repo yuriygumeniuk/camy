@@ -1,12 +1,12 @@
 @import '_media.scss';
-@import '_label_media.scss';
 html {
 	font-size: 1px;
+
 	@include mdf3_1199 {
-		font-size: 0.7px;
-	}	
+		font-size: .8px;
+	}
 	@include mdf4_899 {
-		font-size: 0.5px;
+		font-size: .7px;
 	}
 }
 .wrapper {
@@ -26,14 +26,18 @@ html {
 /*Кнопка вверх*/
 #go-top {
 	position: fixed;
-	right: calc((100vw - 1180px) / 2 - 80px - 50px);
-	bottom: 360px;
+	right: calc((100vw - 1100px) / 2 - 80px - 50px);
+	bottom: calc(40vh - 50px);
+	// bottom: 360px;
 	display: none;
 	padding-top: 5px;
 	padding-left: 15px;
 	width: 50px;
 	height: 50px;
 	cursor: pointer;
+	@media (max-width: 1400px) {
+		display: none;
+	}
 }
 #go-top img {
 	display: block;
@@ -188,6 +192,12 @@ html {
 	border: 1px solid #cfcfcf;
 	border-radius: 7px;
 	background-color: #fff;
+	&.err {
+		border: 1px solid red;
+	}
+	&.focus {
+		border: 1px solid #9ab920;
+	}
 }
 .search-block__btn {
 	position: absolute;
@@ -195,6 +205,7 @@ html {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	outline: none;
 	border: none;
 	background: url(../img/searchIcon.png) no-repeat center 7px;
 }
@@ -302,9 +313,9 @@ html {
 	flex: none;
 	margin: 0 auto;
 	min-width: 900px;
-	width: 100%;
 	// overflow: hidden;
 	max-width: 1180px;
+	width: 100%;
 	border-right: 1px solid #fff;
 	border-left: 1px solid #fff;
 }
@@ -314,9 +325,9 @@ html {
 	display: inline-block;
 }
 .img-slider {
+	display: block;
 	width: 100%;
-    height: auto;
-    display: block;
+	height: auto;
 }
 .slider-side {
 	z-index: 0;
@@ -348,12 +359,13 @@ html {
 	border: 3px solid rgba(255, 255, 255, .2);
 	border-radius: 50%;
 	background-color: rgba(30, 30, 32, .7);
+
 	@include mdf3_1199 {
+		width: 50px;
+		height: 50px;
 		img {
 			transform: scale(.75);
 		}
-		width: 50px;
-		height: 50px;
 	}
 }
 .backward {
@@ -415,7 +427,7 @@ html {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	margin-bottom: 50px;
+	margin-bottom: 50rem;
 	padding: 0 22px;
 	width: 100%;
 	// width: 1180px;
@@ -443,12 +455,11 @@ html {
 	font-weight: 400;
 	font-size: 16px;
 	font-family: 'MuseoSans-500', sans-serif;
-	/*padding: 0 px;*/
 }
 /*---------- section recent ----------*/
 .recent {
-	margin-bottom: 70px;
-	height: 475px;
+	margin-bottom: 50rem;
+	max-height: 495px;
 }
 .block-title {
 	display: flex;
@@ -473,8 +484,8 @@ html {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	width: 50px;
-	height: 23px;
+	// width: 50px;
+	// height: 23px;
 }
 .product-arrow {
 	width: 23px;
@@ -482,8 +493,17 @@ html {
 
 	color: #fff;
 	font-size: 9px;
-	/*----view----*/
 	font-family: 'FontAwesome';
+
+	@include mdf3_1199 {
+		width: 30px;
+		height: 30px;
+
+		font-size: 10px;
+	}
+	&:not(:last-child) {
+		margin-right: 10px;
+	}
 }
 /*---------- product-block ----------*/
 .product-block {
@@ -496,13 +516,17 @@ html {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
-	width: 280px;
-	height: 420px;
+	max-width: 280px;
+	max-height: 420px;
 	border: 1px solid #efefef;
 	border-radius: 5px;
 	background-color: #fff;
-	/*----view----*/
 	box-shadow: 0 1px 0 rgba(0, 0, 0, .15);
+}
+.product__img {
+	display: block;
+	width: 100%;
+	height: auto;
 }
 .product-price-add {
 	display: flex;
@@ -511,6 +535,10 @@ html {
 	padding: 0 16px;
 	height: 55px;
 	border-bottom: 1px solid #ccc;
+
+	@include mdf3_1199 {
+		padding: 0 10px;
+	}
 }
 .price__current {
 	color: #000;
@@ -537,21 +565,27 @@ html {
 	font-family: 'MuseoSans-500', sans-serif;
 }
 .product-text {
+	overflow: hidden;
 	padding: 18px 15px 0;
 	height: 133px;
 	border-bottom: 1px solid #ccc;
+
+	@include mdf3_1199 {
+		padding: 10px 10px 0;
+	}
 }
 .product__title {
 	margin-bottom: 10px;
 
 	color: #282828;
 	font-weight: 400;
-	font-size: 20px;
+	// font-size: 20px;
+	font-size: 20rem;
 	font-family: 'MuseoSans-500', sans-serif;
 }
 .product__desc {
 	color: #808080;
-	line-height: 23.98px;
+	line-height: 24rem;
 	font-weight: 400;
 	font-size: 14px;
 	font-family: 'MuseoSans-500', sans-serif;
@@ -597,8 +631,8 @@ html {
 }
 /*---------- section featured ----------*/
 .featured {
-	margin-bottom: 70px;
-	height: 475px;
+	margin-bottom: 50rem;
+	max-height: 475px;
 }
 .featured .hr {
 	flex: 1;
@@ -632,18 +666,30 @@ html {
 /*========== FOOTER ================*/
 /*---------- section footer-control ----------*/
 .footer {
-	padding-top: 47px;
 	border-top: 1px solid #ddd;
 }
 .footer-control {
 	display: flex;
-	justify-content: space-between;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding-bottom: 50rem;
+}
+.footer-item {
+	margin-top: 60rem;
+
+	@include mdf3_1199 {
+		&:not(:last-child) {
+			margin-right: 40rem;
+		}
+	}
+	&:not(:last-child) {
+		margin-right: 20px;
+	}
 }
 .logo-social {
 	display: flex;
 	align-items: left;
 	flex-direction: column;
-	width: 239px;
 }
 .scale {
 	margin-bottom: 30px;
@@ -660,13 +706,13 @@ html {
 }
 /*---------- footer-recent ----------*/
 .footer-recent {
-	width: 270px;
+	display: flex;
+	flex-direction: column;
 }
 
 .recent-item {
 	display: flex;
 	margin-bottom: 16px;
-	width: 265px;
 	height: 70px;
 	border: 1px solid #ddd;
 	border-radius: 9px;
@@ -697,8 +743,6 @@ html {
 }
 /*---------- footer-contact ----------*/
 .footer-contacts {
-	width: 173px;
-
 	color: #1e1e20;
 	line-height: 22px;
 	font-weight: 400;
@@ -710,18 +754,25 @@ html {
 }
 /*---------- footer-people-say ----------*/
 .footer-people-say {
+	position: relative;
 	display: flex;
 	flex-direction: column;
-	padding-bottom: 38px;
-	width: 330px;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	@include mdf3_1199 {
+		flex-direction: row;
+	}
 }
 .say-block {
 	display: flex;
 	justify-content: space-between;
-	width: 100%;
-}
-.say-block:not(:last-child) {
-	margin-bottom: 22px;
+
+	@include mdf3_1199 {
+		&:not(:last-child) {
+			margin-right: 40px;
+		}
+	}
 }
 .say-block-img {
 	display: flex;
@@ -737,7 +788,7 @@ html {
 }
 .say__name {
 	text-transform: uppercase;
-	letter-spacing: -.14px;
+	// letter-spacing: -.14px;
 
 	color: #1e1e20;
 	font-weight: 400;
